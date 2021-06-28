@@ -14,6 +14,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "short-calendar": [
+        "dist/short-calendar/short-calendar",
+        "dist/short-calendar"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
