@@ -1,0 +1,19 @@
+<div class="flex-container">
+  <div class= "arrow-container" (click)="scrollX('left',300)">
+  <div class="arrow" >&lt;</div>
+</div>
+  <div id = "short-calendar-container" class="calendar-items">
+    <div class="calendar-item" 
+    [ngClass]="{'active': val.date===activeShortDate.date 
+    && val.month===activeShortDate.month}" *ngFor="let val of dates"
+    (click) = "dateClicked(val)"
+    >
+        <div class="calendar-day">{{val.day}}</div>
+      <div class="calendar-date">{{val.date}}</div>
+      <div class="calendar-month">{{val.month}}</div>
+    </div>
+  </div>
+  <div class= "arrow-container" (click)="scrollX('right',300)">
+  <div class="arrow"  >&gt;</div>
+</div>
+</div>

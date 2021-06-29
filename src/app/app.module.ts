@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ShortCalendarModule } from 'projects/short-calendar/src/lib/short-calendar.module';
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    
     AppRoutingModule,
     ShortCalendarModule
   ],

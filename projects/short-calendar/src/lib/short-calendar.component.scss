@@ -1,0 +1,32 @@
+.calendar-items{
+    display: flex;
+    width: 300px;
+    overflow: auto;
+    user-select: none;
+}
+.calendar-items::-webkit-scrollbar {
+    display: none;
+  }
+.arrow-container{
+    background: red;
+    cursor: pointer;
+
+}
+.arrow{
+margin: 25px 10px;
+user-select: none;
+}
+  
+.calendar-item{
+    padding:10px;
+    width: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: rgba(231, 217, 217, 0.836);
+    &.active{
+        background: rgb(141, 193, 238);
+    }
+}
+.flex-container{
+    display: flex;
+}

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ShortCalendarComponent } from './short-calendar.component';
 
@@ -8,6 +9,7 @@ import { ShortCalendarComponent } from './short-calendar.component';
     ShortCalendarComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     ShortCalendarComponent
